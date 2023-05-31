@@ -2,16 +2,16 @@
 
 <section class="conect">
   <div class="conect_container">
+    {% for block in section.blocks %}
     <div class="conect_item">
-      {% for block in section.blocks %}
       <div class="svg_conect">
         {{ block.settings.image_conect | image_url: width: number | image_tag: class: 'svg', loading: 'lazy' }}
       </div>
       <h2 class="conect_title">{{ block.settings.title_conect }}</h2>
       <p class="text_conect">{{ block.settings.text_conect }}</p>
     </div>
-  {% endfor %}
   </div>
+{% endfor %}
 </section>
 
 {% schema %}
