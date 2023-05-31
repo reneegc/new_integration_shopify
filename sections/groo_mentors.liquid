@@ -2,9 +2,9 @@
 
 <section class="mentors">
    <h2 class="title_mentors">
-    {{ section.settings.title_conect }}
+    {{ section.settings.title_mentors }}
   </h2>
-  <p class="text_mentors">{{ section.settings.text_conect }}</p>
+  <p class="text_mentors">{{ section.settings.text_mentors }}</p>
   
   {% for block in section.blocks %}
     <div class="mentors_container">
@@ -24,13 +24,13 @@
   "name": "groo_mentors",
   "settings": [
     {
-      "name": "title_conect",
       "type": "text",
+      "id" : "title_mentors",
       "label": "Title"
     },
     {
-      "name": "text_conect",
       "type": "text",
+      "id" : "text_mentors",
       "label": "Text"
     }
   ],
@@ -41,17 +41,17 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "image_conect",
+          "id": "image_card",
           "label": "Image conect"
         },
         {
           "type": "text",
-          "id": "title_conect",
+          "id": "title_card",
           "label": "Title"
         },
         {
           "type": "text",
-          "id": "text_conect",
+          "id": "text_card",
           "label": "Text"
         }
       ]
