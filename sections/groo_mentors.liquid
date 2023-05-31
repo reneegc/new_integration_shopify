@@ -1,0 +1,61 @@
+{{ 'groo_mentors.css' | asset_url | stylesheet_tag }}
+
+<section class="mentors">
+   <h2 class="title_mentors">
+    {{ section.settings.title_conect }}
+  </h2>
+  <p class="text_mentors">{{ section.settings.text_conect }}</p>
+  
+  {% for block in section.blocks %}
+    <div class="mentors_container">
+      <div class="mentors_item">
+        <div class="svg_mentors">
+          {{ block.settings.image_card | image_url: width: number | image_tag: class: 'svg', loading: 'lazy' }}
+        </div>
+        <h2 class="conect_title">{{ block.settings.title_card }}</h2>
+        <p class="text_conect">{{ block.settings.text_card }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "groo_mentors",
+  "settings": [
+    {
+      "name": "title_conect",
+      "type": "text",
+      "label": "Title"
+    },
+    {
+      "name": "text_conect",
+      "type": "text",
+      "label": "Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_conect",
+          "label": "Image conect"
+        },
+        {
+          "type": "text",
+          "id": "title_conect",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "text_conect",
+          "label": "Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

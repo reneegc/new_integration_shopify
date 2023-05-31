@@ -25,12 +25,18 @@
       "type": "groo_conect",
       "settings": {
       }
+    },
+    "Mentors": {
+      "type": "groo_mentors",
+      "settings": {
+      }
     }
   },
   "order": [
     "navbar",
     "hero",
     "inspiring",
-    "Connect"
+    "Connect",
+    "Mentors"
   ]
 }
