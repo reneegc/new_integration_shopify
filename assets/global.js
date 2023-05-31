@@ -1,3 +1,12 @@
+let burguer = document.querySelector(".burguer_mobile");
+let dropdownD = document.querySelector(".container_mobile");
+
+burguer.addEventListener("click", () => {
+  dropdownD.classList.toggle("show");
+})
+
+
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(

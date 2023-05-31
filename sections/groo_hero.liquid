@@ -1,0 +1,84 @@
+{{ 'groo_hero.css' | asset_url | stylesheet_tag }}
+
+    <section class="hero">
+        <div class="left_hero">
+            <h1 class="title_hero">{{ section.settings.title-Hero }}</h1>
+            <p class="connect_hero">
+                <strong>{{ section.settings.description }} </strong> {{ section.settings.description-text }}
+            </p>
+            <div class="container_bottoms">
+                <a class="join" href="">Join Groo 
+                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0622995 3.74887L0.0622995 0.5H10L10 0.50001L10 3.74887L10 10.4377H6.75114V6.04617L2.2973 10.5L0 8.20272L4.45386 3.74887H0.0622995Z" fill="white"/>
+                    </svg>
+                    </a>
+                <a class="watch" href="">Watch Video
+                    <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0622995 3.74887L0.0622995 0.5H10L10 0.50001L10 3.74887L10 10.4377H6.75114V6.04617L2.2973 10.5L0 8.20272L4.45386 3.74887H0.0622995Z" fill="#2F80ED"/>
+                        </svg>
+                        
+                </a>
+            </div>
+        </div>
+        <div class="rigth_hero">
+            <div class="img_one"><img src="../img/image 6.png" alt="img_one" class="one_one"></div>
+            <div class="img_two" style="background-image: url(../img/image\ 4.png);">
+                <svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_93_1777)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4414 20.0293L20.4414 30.4908L41.9799 30.4908L41.9798 52.0293L52.4414 52.0293L52.4414 30.4908L52.4414 20.0293L20.4414 20.0293Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_93_1777" x="0.441406" y="0.0292969" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="4" dy="4"/>
+                    <feGaussianBlur stdDeviation="12"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_93_1777"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_93_1777" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+            </div>
+            <div class="img_three" style="background-image: url(../img/image\ 8.png);">
+                <svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_99_1328)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5459 20.9792L20.5459 31.4408L42.0843 31.4408L42.0843 52.9792L52.5458 52.9792L52.5458 31.4408L52.5458 31.4408L52.5458 20.9792L20.5459 20.9792Z" fill="#2F80ED"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_99_1328" x="0.545898" y="0.979248" width="80" height="79.9999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="4" dy="4"/>
+                    <feGaussianBlur stdDeviation="12"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_99_1328"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_99_1328" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+                    </div>
+        </div>
+    </section>
+    {% schema %}
+        {
+        "name": "groo_hero",
+        "settings": [
+            {
+            "type": "text",
+            "id": "title-Hero",
+            "label": "Title"
+            },
+            {
+            "type": "text",
+            "id": "description",
+            "label": "Description strong"
+            },
+            {
+            "type": "text",
+            "id": "description-text",
+            "label": "Description Text"
+            }
+        ]
+        }
+  {% endschema %}

@@ -1,0 +1,31 @@
+{{ 'groo_inspiring.css' | asset_url | stylesheet_tag }}
+
+    <section class="inspiring">
+        <div class="inspiring_container">
+            <p class="text_inspiring">{{ section.settings.text_one }}</p>
+            <p class="text_inspiring">{{ section.settings.text_two }}</p>
+            <p class="text_inspiring">{{ section.settings.text_three }}</p>
+        </div>
+    </section>
+    {% schema %}
+        {
+        "name": "groo_inspiring",
+        "settings": [
+            {
+            "type": "text",
+            "id": "text_one",
+            "label": "Text One"
+            },
+            {
+            "type": "text",
+            "id": "text_two",
+            "label": "Text Two"
+            },
+            {
+            "type": "text",
+            "id": "text_three",
+            "label": "Text Three"
+            }
+        ]
+        }
+    {% endschema %} 

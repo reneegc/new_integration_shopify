@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 760px;
+
+}
+
+.hero .left_hero,
+.hero .rigth_hero {
+    width: 50%;
+    position: relative;
+}
+.hero .left_hero{
+    padding-left: 120px;
+}
+
+.hero .title_hero {
+    font-family: GT America Trial;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+    max-width: 621px;
+    margin: 181px 0 24px 0;
+}
+
+.hero .connect_hero {
+    font-family: GT America Trial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+    margin-bottom: 46px;
+    max-width: 464px;
+}
+
+.hero .join {
+    min-height: 46px;
+    border-radius: 100px;
+    min-width: 464px;
+    background-color: #2F80ED;
+    color: #fff;
+    padding: 16px 32px;
+    margin-right: 18px;
+}
+a{
+    text-decoration: none;
+}
+.hero .join > svg{
+    margin-left: 10px;
+}
+
+.hero .watch{
+    max-width: 190px;
+    min-height: 55px;
+    padding: 16px 32px;
+    border: 1px solid #2F80ED;
+    border-radius: 100px;
+    color: #2F80ED;
+}
+.hero .watch > svg{
+    margin-right: 10px;
+}
+.hero .img_one{
+    max-width: 580px;
+    min-height: 530px;
+    border-radius: 32px 0px 0px 32px;
+    margin-left: 120px;
+}
+
+.hero .one_one{
+    margin-top: 46px;
+    max-width: 100%;
+}
+
+.hero .img_two{
+    width: 125px;
+    height: 125px;
+    border-radius: 200px;
+    position: absolute;
+    top: 40%;
+    left: 62.5px;
+    transform: translateY(-50%);
+    z-index: 50;
+}
+.hero .img_two > svg{
+    margin-top: 25%;
+}
+
+.hero .img_three{
+    width: 211.23px;
+    height: 210.96px;
+    border-radius: 200px;
+    position: absolute;
+    top: 478.5px;
+    z-index: 50;
+    right: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero .img_three > svg{
+    margin-top: 40%;
+}
+
+@media (max-width:1180px) {
+    .hero .img_one{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 950px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero .left_hero,
+    .hero .rigth_hero {
+        width: 100%;
+    }
+    .hero .join {
+        margin-right: 3px;
+    }
+    .hero .watch{
+        max-width: 100px;
+        padding: 16px 16px;
+
+    }
+    .hero .rigth_hero {
+        margin-left: 0;
+    }
+    .hero .left_hero{
+        padding-left: 20px;
+    }
+    .hero .img_one{
+        margin-left: 0;
+    }
+    .hero .img_two{
+        left: 8%;
+    }
+    .hero .img_three{
+        top: 50%;
+        width: 150px;
+        height: 150px;
+    }
+}

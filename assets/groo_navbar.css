@@ -1,0 +1,124 @@
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+    padding: 48px 64px 23px;
+    position: relative;
+}
+
+.navbar .container_lest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
+}
+
+.navbar .links,
+.navbar .login {
+    font-family: GT America Trial;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+}
+
+.navbar .logo {
+    margin-right: 8px;
+}
+
+.navbar .links {
+    margin-left: 48px;
+}
+
+.navbar .sign {
+    min-width: 115px;
+    min-height: 40px;
+    border-radius: 100px;
+    border: 2px solid #2F80ED;
+    color: #2F80ED;
+    padding: 8px 24px;
+    margin-right: 40px;
+    font-family: GT America Trial;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.navbar .container_mobile,
+.navbar .burguer_mobile {
+    display: none;
+}
+
+.navbar .show {
+    display: flex;
+}
+
+@media (max-width:1180px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .burguer_mobile {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .navbar .container_mobile {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        top: 77%;
+        background-color: #2F80ED;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .navbar .links_mobile {
+        color: #fff;
+        font-family: GT America Trial;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 8px;
+    }
+
+    .navbar .line {
+        width: 30px;
+        height: 4px;
+        border-radius: 100px;
+        background-color: #2F80ED;
+        margin-top: 3px;
+    }
+}
+@media (max-width:640px) {
+    .navbar{
+        padding: 48px 20px 23px;
+    }
+    .navbar .logo > svg{
+        width: 80px;
+    }
+    .navbar .line {
+        width: 4px;
+    }
+
+    .navbar .sign {
+        margin-right: 10px;
+        padding: 8px 15px;
+    }
+
+}
