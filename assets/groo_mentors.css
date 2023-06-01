@@ -71,6 +71,6 @@
     text-align: left;
 }
 
-.mentors .card_text:nth-child(1) {
-    margin-bottom: 18px;
+.mentors .card_text:nth-child(2) {
+    margin-top: 18px;
 }
