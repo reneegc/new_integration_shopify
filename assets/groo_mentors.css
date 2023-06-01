@@ -3,6 +3,10 @@
     color: #222222;
     font-family: GT America Trial;
 }
+.mentors .card_title,
+.mentors .card_text {
+    padding-left: 36px;
+}
 .mentors .title_mentors {
     font-size: 34px;
     font-weight: 700;

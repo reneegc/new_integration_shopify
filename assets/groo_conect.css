@@ -5,13 +5,13 @@
 }
 .conect{
     display: flex;
-}
-.conect .conect_container{
-    max-width: 1440px;
     margin: 0 auto;
-    display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1440px;
+}
+.conect .conect_container{
+    display: flex;
 }
 
 .conect .conect_item{
