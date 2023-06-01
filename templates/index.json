@@ -23,12 +23,79 @@
     },
     "Connect": {
       "type": "groo_conect",
+      "blocks": {
+        "fa73a64d-12fc-42c2-af5d-2c0d18eb2727": {
+          "type": "slide",
+          "settings": {
+            "image_conect": "shopify:\/\/shop_images\/Vector_9.png",
+            "title_conect": "Connect",
+            "text_conect": "with the right mentor"
+          }
+        },
+        "b9b7b4e5-cec2-4f05-bb48-f6cd64e816ef": {
+          "type": "slide",
+          "settings": {
+            "image_conect": "shopify:\/\/shop_images\/learning_on_pc.png",
+            "title_conect": "Learn",
+            "text_conect": "from an experienced professional"
+          }
+        },
+        "3fea26f9-b953-41f9-8f2f-cc7807dab870": {
+          "type": "slide",
+          "settings": {
+            "image_conect": "shopify:\/\/shop_images\/Group.png",
+            "title_conect": "Grow",
+            "text_conect": "with someone who cares about you"
+          }
+        }
+      },
+      "block_order": [
+        "fa73a64d-12fc-42c2-af5d-2c0d18eb2727",
+        "b9b7b4e5-cec2-4f05-bb48-f6cd64e816ef",
+        "3fea26f9-b953-41f9-8f2f-cc7807dab870"
+      ],
       "settings": {
       }
     },
     "Mentors": {
       "type": "groo_mentors",
+      "blocks": {
+        "a5923366-83ac-467b-8951-c7e72313226a": {
+          "type": "slide",
+          "settings": {
+            "image_card": "shopify:\/\/shop_images\/image_4_fece6654-2153-4aaf-841c-feb4b4cd2b4f.png",
+            "title_card": "Fran Perez",
+            "text_card": "VP of Marketing, Melbourne",
+            "text_card_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, imperdiet tempor at enim nisi nibh eros..."
+          }
+        },
+        "b4c62d06-e109-466d-ba66-9a6ecebed979": {
+          "type": "slide",
+          "settings": {
+            "image_card": "shopify:\/\/shop_images\/image_8_2a855dbe-7a68-4240-9166-b1069c2dfac4.png",
+            "title_card": "Hassan Ajayi",
+            "text_card": "CEO, Austin",
+            "text_card_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, imperdiet tempor at enim nisi nibh eros..."
+          }
+        },
+        "5925dc0f-d413-4d21-99fe-ece6f2bfd6c2": {
+          "type": "slide",
+          "settings": {
+            "image_card": "shopify:\/\/shop_images\/image_3.png",
+            "title_card": "Samuel Hall",
+            "text_card": "Director of Programs, Tokyo",
+            "text_card_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, imperdiet tempor at enim nisi nibh eros..."
+          }
+        }
+      },
+      "block_order": [
+        "a5923366-83ac-467b-8951-c7e72313226a",
+        "b4c62d06-e109-466d-ba66-9a6ecebed979",
+        "5925dc0f-d413-4d21-99fe-ece6f2bfd6c2"
+      ],
       "settings": {
+        "title_mentors": "",
+        "text_mentors": ""
       }
     }
   },
