@@ -6,8 +6,8 @@
   </h2>
   <p class="text_mentors">{{ section.settings.text_mentors }}</p>
   
-  {% for block in section.blocks %}
-    <div class="mentors_container">
+  <div class="mentors_container">
+    {% for block in section.blocks %}
       <div class="mentors_item">
         <div class="svg_mentors">
           {{ block.settings.image_card | image_url: width: number | image_tag: class: 'svg', loading: 'lazy' }}
@@ -16,8 +16,8 @@
         <p class="card_text">{{ block.settings.text_card }}</p>
         <p class="card_text">{{ block.settings.text_card_2 }}</p>
       </div>
+    {% endfor %}
     </div>
-  {% endfor %}
 </section>
 
 {% schema %}
