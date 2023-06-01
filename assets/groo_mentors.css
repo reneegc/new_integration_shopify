@@ -30,6 +30,8 @@
 .mentors .mentors_item {
     max-width: 362.67px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .mentors .mentors_item:hover {
