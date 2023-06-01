@@ -1,6 +1,10 @@
-.mentors .title_mentors {
+.mentors .title_mentors, .mentors .text_mentors, .mentors .card_title,
+.mentors .card_text {
     color: #222222;
     font-family: GT America Trial;
+
+}
+.mentors .title_mentors {
     font-size: 34px;
     font-weight: 700;
     line-height: 43px;
@@ -10,12 +14,61 @@
 }
 
 .mentors .text_mentors {
-    color: #222222;
-    font-family: GT America Trial;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
+}
 
+.mentors .mentors_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mentors .mentors_item {
+    max-width: 362.67px;
+    overflow: hidden;
+}
+
+.mentors .mentors_item:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+}
+
+.mentors .mentors_item:nth-child(2) {
+    margin: 0 48px;
+}
+
+.mentors .svg_mentors {
+    max-width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    margin-bottom: 36px;
+}
+
+.mentors .svg {
+    max-width: 100%;
+}
+
+
+.mentors .card_title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.mentors .card_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.mentors .card_text:nth-child(1) {
+    margin-bottom: 18px;
 }

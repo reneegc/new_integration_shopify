@@ -12,8 +12,9 @@
         <div class="svg_mentors">
           {{ block.settings.image_card | image_url: width: number | image_tag: class: 'svg', loading: 'lazy' }}
         </div>
-        <h2 class="conect_title">{{ block.settings.title_card }}</h2>
-        <p class="text_conect">{{ block.settings.text_card }}</p>
+        <h2 class="card_title">{{ block.settings.title_card }}</h2>
+        <p class="card_text">{{ block.settings.text_card }}</p>
+        <p class="card_text">{{ block.settings.text_card_2 }}</p>
       </div>
     </div>
   {% endfor %}
@@ -25,12 +26,17 @@
   "settings": [
     {
       "type": "text",
-      "id" : "title_mentors",
+      "id" : "title_card",
       "label": "Title"
     },
     {
       "type": "text",
-      "id" : "text_mentors",
+      "id" : "text_card",
+      "label": "Description Card"
+    },
+    {
+      "type": "text",
+      "id" : "text_card_2",
       "label": "Text"
     }
   ],
