@@ -44,12 +44,13 @@
 
 .mentors .svg_mentors {
     max-width: 100%;
-    border-radius: 32px 32px 0px 0px;
     margin-bottom: 36px;
 }
 
 .mentors .svg {
     max-width: 100%;
+    max-height: 279.72px;
+    border-radius: 32px 32px 0px 0px;
 }
 
 
